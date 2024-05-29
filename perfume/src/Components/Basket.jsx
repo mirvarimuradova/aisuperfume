@@ -26,14 +26,14 @@ const Basket = () => {
             <h4>{item.name}</h4>
             <p>Price: {item.price} USD</p>
             <p>Quantity: {item.quantity}</p>
-            <button onClick={() => updateItemQuantity(item.productId, item.quantity - 1)}>-</button>
-            <button onClick={() => updateItemQuantity(item.productId, item.quantity + 1)}>+</button>
-            <button onClick={() => removeItem(item.productId)}>Remove</button>
+            <button className='change_quantity' onClick={() => updateItemQuantity(item.productId, item.quantity - 1)}>-</button>
+            <button className='change_quantity' onClick={() => updateItemQuantity(item.productId, item.quantity + 1)}>+</button>
+            <button className='remove-item' onClick={() => removeItem(item.productId)}>Remove</button>
           </li>
         ))}
       </ul>
       <h3>Total: {cartTotal} USD</h3>
-      <button onClick={() => emptyCart()}>Empty Cart</button>
+      <button className='remove-item' onClick={() => emptyCart()}>Empty Cart</button>
     </div>
   );
 };

@@ -5,7 +5,8 @@ import Main from './Components/Main';
 import Footer from './Components/Footer';
 import Contacts from './Components/Contacts';
 import Shop from './Components/Shop';
-import Basket from './Components/Basket'
+import Basket from './Components/Basket';
+import About from './Components/About';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/contacts" element={<Contacts />} />
+          <Route path='/about' element={<About/>}></Route>
           <Route path="/shop" element={<Shop />} />
           <Route path="/basket" element={<Basket/>}/>
         </Routes>

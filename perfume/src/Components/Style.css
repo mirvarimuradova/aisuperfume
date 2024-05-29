@@ -96,11 +96,20 @@ h2{
   .topic{
     width: 250px;
     height: 75px;
-    border-radius: 5px;
+    border-radius: 5px;  
+   border: 1px solid grey;
 }
   .contactDetail{
     font-family: 'Nanum Gothic', sans-serif;
   }
+  .submit{
+    width: 200px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+  }
+
   .slogan{
     font-size: 40px;
     font-family: "Dancing Script", cursive;
@@ -226,6 +235,8 @@ h2{
    justify-content: space-evenly;
   }
   .our_history p:nth-child(2){
+    text-align: left;
+    font-size: 18px;
     width: 600px;
   }
   .our_history img{
@@ -264,3 +275,44 @@ h2{
   margin: 0 5px;
 }
 
+.change_quantity{
+  width: 50px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+}
+.remove-item{
+  width: 90px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+}
+.about-div1{
+  padding: 15px 25px;
+  border-bottom: 1px solid black;
+  padding: 40px ;
+  display: flex;
+  justify-content: space-around;
+}
+.about-div1 img{
+  padding-top: 20px ;
+  width: 350px;
+  height: 320px;
+}
+.about-div1 p{
+ 
+  font-size: 19px;
+  width: 500px;
+}
+.about-div2{
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.about-div2 p{
+  width: 550px;
+  font-size: 17px;
+}
+.about-div2 img{
+  width: 520px;
+}
